@@ -27,6 +27,9 @@ use App\Http\Controllers\WelcomeController;
 //     return 'Hello World';
 // });
 
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+    
+
 Route::resource('photos', PhotoController::class)->only([ 'index', 'show'
 ]);
 
